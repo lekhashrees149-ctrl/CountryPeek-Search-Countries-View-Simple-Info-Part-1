@@ -1,0 +1,118 @@
+/* Home Page Styling */
+.home-page {
+  padding: 2rem 0;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.home-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.home-header p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+.search-section {
+  margin-bottom: 3rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.search-query-display {
+  text-align: center;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+  color: var(--text-color);
+}
+
+.home-content {
+  margin-top: 3rem;
+}
+
+.info-section {
+  background-color: var(--light-bg);
+  padding: 2rem;
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-color);
+}
+
+.info-section h3 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-section li {
+  padding: 0.75rem 0;
+  padding-left: 2rem;
+  position: relative;
+  color: var(--text-color);
+}
+
+.info-section li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 1rem 0;
+  }
+
+  .home-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .home-header p {
+    font-size: 1rem;
+  }
+
+  .search-input {
+    max-width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .info-section {
+    padding: 1.5rem;
+  }
+
+  .info-section li {
+    font-size: 0.95rem;
+  }
+}
